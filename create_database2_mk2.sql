@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS assignment5_datapipeline_mk1;
-USE assignment5_datapipeline_mk1;
+CREATE DATABASE IF NOT EXISTS assignment5_datapipeline_mk2;
+USE assignment5_datapipeline_mk2;
 
 -- Create Customer1 table
-CREATE TABLE IF NOT EXISTS customer1_data (
+CREATE TABLE IF NOT EXISTS customer2_data (
     `Customer ID` VARCHAR(255) PRIMARY KEY,
     `Last Used Platform` VARCHAR(255),
     `Is Blocked` VARCHAR(255),
@@ -12,10 +12,10 @@ CREATE TABLE IF NOT EXISTS customer1_data (
     `Loyalty Points` VARCHAR(255)
 );
 
--- Create deliveries1 table
-CREATE TABLE IF NOT EXISTS deliveries1_data (
+-- Create deliveries2 table
+CREATE TABLE IF NOT EXISTS deliveries2_data (
     `Task_ID` VARCHAR(255) PRIMARY KEY,
-    `Order ID` VARCHAR(255),
+    `Order_ID` VARCHAR(255),
     `Relationship` VARCHAR(255),
     `Team_Name` VARCHAR(255),
     `Task_Type` DECIMAL(10, 2),
@@ -41,15 +41,11 @@ CREATE TABLE IF NOT EXISTS deliveries1_data (
     `Payment_Type` VARCHAR(255),
     `Task_Category` VARCHAR(255), 
     `Earning` VARCHAR(255), 
-    `Pricing` VARCHAR(255), 
-    `Customer_ID` VARCHAR(255),
-    `Language` VARCHAR(255),
-    `Outstanding Amount` DECIMAL(10, 2),
-    `Loyalty Point` VARCHAR(255)
+    `Pricing` VARCHAR(255) 
 );
 
--- Create order1 table
-CREATE TABLE IF NOT EXISTS orders_data (
+-- Create order2 table
+CREATE TABLE IF NOT EXISTS orders2_data (
     `Order ID` VARCHAR(255) PRIMARY KEY, 
     `Order Status` VARCHAR(255), 
     `Category Name` VARCHAR(255), 
@@ -72,19 +68,22 @@ CREATE TABLE IF NOT EXISTS orders_data (
     `Transaction ID` VARCHAR(255), 
     `Currency Symbol` VARCHAR(255), 
     `Customer_ID` VARCHAR(255),
-    `Language` VARCHAR(255),
-    `Outstanding Amount` DECIMAL(10, 2),
-    `Loyalty Point` VARCHAR(255),
     `Merchant ID` VARCHAR(255), 
     `Distance_in_km` DECIMAL(10, 2), 
     `Order Time` DATE, 
     `Pickup Time` DATE,
     `Delivery Time` DATE, 
     `Order Preparation Time` DATE, 
-    `Debt Amount` DECIMAL(10, 2),
+    -- `Debt Amount` DECIMAL(10, 2),
     `Redeemed Loyalty Points` DECIMAL(10, 2), 
     `Consumed Loyalty Points` DECIMAL(10, 2), 
     `Flat Discount` DECIMAL(10, 2),
     `Checkout Template Name` VARCHAR(255), 
-    `Checkout Template Value` DECIMAL(10, 2)
+    `Checkout Template Value` DECIMAL(10, 2),
+    -- `Last Used Platform` VARCHAR(255),
+    -- `Is Blocked` VARCHAR(255),
+    -- `Created At` VARCHAR(255),
+    `Language` VARCHAR(255),
+    `Outstanding Amount` DECIMAL(10, 2),
+    `Loyalty Points` VARCHAR(255)
 );
