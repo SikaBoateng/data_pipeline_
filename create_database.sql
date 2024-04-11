@@ -1,0 +1,125 @@
+-- create database assignment5_datapipeline;
+-- USE assignment5_datapipeline;
+
+-- -- Create Customer1 table
+-- CREATE TABLE IF NOT EXISTS customer1_data (
+--     -- 'Customer ID', 'Last Used Platform', 'Is Blocked', 'Created At',
+--     --    'Language', 'Outstanding Amount', 'Loyalty Points'
+--     Customer ID VARCHAR(255) PRIMARY KEY,
+--     Last Used Platform VARCHAR(255),
+--     Is Blocked VARCHAR(255),
+--     Created At VARCHAR(255),
+--     Language DECIMAL(255),
+--     Outstanding Amount (255),
+--     Loyalty Point VARCHAR(255)
+-- );
+
+-- -- Create deliveries1 table
+-- CREATE TABLE IF NOT EXISTS deliveries1_data (
+--     Task_ID VARCHAR(255) PRIMARY KEY,
+--     Order ID VARCHAR(255) FOREIGN KEY,
+--     Relationship VARCHAR(255),
+--     Team_Name VARCHAR(255),
+--     Task_Type DECIMAL(255),
+--     Agent_ID VARCHAR(255),
+--     Agent_Name VARCHAR(255),
+--     Distance(m) VARCHAR(255),
+--     Total_Time_Taken(min) DATE,
+--     Task_Status DECIMAL(255),
+--     Ref_Images VARCHAR(255),
+--     Rating VARCHAR(255)
+--     Review VARCHAR(255),
+--     Latitude VARCHAR(255)
+--     Longitude VARCHAR(255),
+--     Promo_Applied VARCHAR(255), 
+--     Custom_Template_ID VARCHAR(255), 
+--     Task_Details_QTY VARCHAR(255),
+--     Task_Details_AMOUNT VARCHAR(255), 
+--     Special_Instructions VARCHAR(255), 
+--     Tip VARCHAR(255),
+--     Delivery_Charges VARCHAR(255), 
+--     Discount VARCHAR(255), 
+--     Subtotal VARCHAR(255), 
+--     Payment_Type VARCHAR(255),
+--     Task_Category VARCHAR(255), 
+--     Earning VARCHAR(255), 
+--     Pricing VARCHAR(255), 
+--     Customer ID VARCHAR(255),
+--     Last Used Platform VARCHAR(255),
+--     Is Blocked VARCHAR(255),
+--     Created At VARCHAR(255),
+--     Language DECIMAL(255),
+--     Outstanding Amount (255),
+--     Loyalty Point VARCHAR(255)
+-- );
+
+-- -- Create order1 table
+-- CREATE TABLE IF NOT EXISTS orders_data (
+--     Order ID, 
+--     Order Status VARCHAR(255), 
+--     Category Name VARCHAR(255), 
+--     SKU', 
+--     'Quantity',
+--     'Unit Price', 
+--     'Cost Price', 
+--     'Total Cost Price', 
+--     'Total Price',
+--     'Order Total', 
+--     'Sub Total', 
+--     'Tax', 
+--     'Delivery Charge', 
+--     'Tip', 
+--     'Discount',
+--     'Remaining Balance', 
+--     'Payment Method', 
+--     'Additional Charge',
+--     'Taxable Amount', 
+--     'Transaction ID', 
+--     'Currency Symbol', 
+--     'Customer ID',
+--     'Merchant ID', 
+--     'Distance (in km)', 
+--     'Order Time', 
+--     'Pickup Time',
+--     'Delivery Time', 
+--     'Order Preparation Time', 
+--     'Debt Amount',
+--     'Redeemed Loyalty Points', 
+--     'Consumed Loyalty Points', 
+--     'Flat Discount',
+--     'Checkout Template Name', 
+--     'Checkout Template Value,
+--     Last Used Platform VARCHAR(255),
+--     Is Blocked VARCHAR(255),
+--     Created At VARCHAR(255),
+--     Language DECIMAL(255),
+--     Outstanding Amount (255),
+--     Loyalty Point VARCHAR(255)
+
+-- -- Create Exploration Data table
+-- CREATE TABLE IF NOT EXISTS exploration_data (
+--     exploration_site VARCHAR(255),
+--     drill_hole_id VARCHAR(255) PRIMARY KEY,
+--     depth_meters DECIMAL(10, 2),
+--     gold_grade_grams_per_ton DECIMAL(10, 2),
+--     exploration_cost DECIMAL(20, 2),
+--     targeted_resource_ounces DECIMAL(20, 2)
+-- );
+
+-- -- Create Sustainability Data table
+-- CREATE TABLE IF NOT EXISTS sustainability_data (
+--     year INT,
+--     carbon_emissions_metric_tons DECIMAL(20, 2),
+--     water_usage_million_liters DECIMAL(20, 2),
+--     community_investment_million_usd DECIMAL(20, 2),
+--     safety_incidents INT,
+--     environmental_compliance_score DECIMAL(5, 2)
+-- );
+
+-- -- Create Customers Data tablecustomers_dataemployeescustomers_datacustomers_data
+-- CREATE TABLE IF NOT EXISTS customers_data (
+--     customer_id VARCHAR(255) PRIMARY KEY,
+--     name VARCHAR(255),
+--     industry VARCHAR(255),
+--     location VARCHAR(255)
+-- );
