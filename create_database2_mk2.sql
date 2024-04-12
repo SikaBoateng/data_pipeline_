@@ -18,9 +18,9 @@ CREATE TABLE IF NOT EXISTS deliveries2_data (
     `Order_ID` VARCHAR(255),
     `Relationship` VARCHAR(255),
     `Team_Name` VARCHAR(255),
-    `Task_Type` DECIMAL(10, 2),
+    `Task_Type` VARCHAR(255),
     `Agent_ID` VARCHAR(255),
-    `Agent_Name` VARCHAR(255),
+    -- `Agent_Name` VARCHAR(255),
     `Distance_m` VARCHAR(255),
     `Total_Time_Taken_min` DATE,
     `Task_Status` DECIMAL(10, 2),
@@ -41,7 +41,14 @@ CREATE TABLE IF NOT EXISTS deliveries2_data (
     `Payment_Type` VARCHAR(255),
     `Task_Category` VARCHAR(255), 
     `Earning` VARCHAR(255), 
-    `Pricing` VARCHAR(255) 
+    `Pricing` VARCHAR(255)
+    `Customer ID` VARCHAR(255),
+    `Last Used Platform` VARCHAR(255),
+    `Is Blocked` VARCHAR(255),
+    `Created At` VARCHAR(255),
+    `Language` VARCHAR(255),
+    `Outstanding Amount` DECIMAL(10, 2),
+    `Loyalty Points` VARCHAR(255) 
 );
 
 -- Create order2 table
@@ -67,7 +74,10 @@ CREATE TABLE IF NOT EXISTS orders2_data (
     `Taxable Amount` DECIMAL(10, 2), 
     `Transaction ID` VARCHAR(255), 
     `Currency Symbol` VARCHAR(255), 
-    `Customer_ID` VARCHAR(255),
+    `Customer ID` VARCHAR(255),
+    -- `Language` VARCHAR(255),
+    -- `Outstanding Amount` DECIMAL(10, 2),
+    -- `Loyalty Point` VARCHAR(255),
     `Merchant ID` VARCHAR(255), 
     `Distance_in_km` DECIMAL(10, 2), 
     `Order Time` DATE, 
@@ -80,10 +90,10 @@ CREATE TABLE IF NOT EXISTS orders2_data (
     `Flat Discount` DECIMAL(10, 2),
     `Checkout Template Name` VARCHAR(255), 
     `Checkout Template Value` DECIMAL(10, 2),
-    -- `Last Used Platform` VARCHAR(255),
-    -- `Is Blocked` VARCHAR(255),
-    -- `Created At` VARCHAR(255),
+    `Last Used Platform` VARCHAR(255),
+    `Is Blocked` VARCHAR(255),
+    `Created At` VARCHAR(255),
     `Language` VARCHAR(255),
     `Outstanding Amount` DECIMAL(10, 2),
-    `Loyalty Points` VARCHAR(255)
+    `Loyalty Point` VARCHAR(255)
 );

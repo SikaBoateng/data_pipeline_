@@ -38,7 +38,7 @@ def import_csv_to_mysql(csv_file, table_name):
 if __name__ == "__main__":
     csv_files = {
         'customer1_data': 'up_mk1_cus.csv',
-        'deliveries1_data': 'up_mk1_del.csv',
+        'deliveries1_data': 'update_mk1_del.csv',
         'orders1_data': 'update_mk1_orders.csv',
 
     }
