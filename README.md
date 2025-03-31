@@ -1,5 +1,5 @@
-# assignment5_data_pipline_ind
-# Abigail Akua Sika Boateng
+# data_pipline_ind
+
 
 # Data Pipeline Readme
 
